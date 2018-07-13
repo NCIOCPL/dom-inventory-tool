@@ -1,0 +1,30 @@
+{   
+    "logging": {
+        "level": "info"
+    },
+    "pipeline": { 
+        "source": {
+            "module": "./lib/sources/sitemap-source",
+            "config": {
+                "sitemapPath": "https://www.cancer.gov/sitemap.xml"
+            }
+        },
+        "transformers": [
+            {
+                "module": "./lib/transformers/dom-extractor",
+                "config": {
+                }
+            }
+        ],
+        "loader": {
+            "module": "./lib/loaders/inventory-loader",
+            "config": {
+               "eshosts": [ "http://localhost:9200" ],
+               "daysToKeep": 10,               
+               "aliasName": "r4r_v1",
+               "mappingPath": "es-mappings/mappings.json",
+               "settingsPath": "es-mappings/settings.json"
+            }
+        }
+    }
+}

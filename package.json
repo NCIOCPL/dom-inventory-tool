@@ -1,0 +1,26 @@
+{
+  "name": "dom-inventory-tool",
+  "version": "0.0.1",
+  "description": "Node program to scrape a web site and inventory all IDs and classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bryanpizzillo@github.com/bryanpizzillo/dom-inventory-tool.git"
+  },
+  "author": "Bryan Pizzillo",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/bryanpizzillo/dom-inventory-tool/issues"
+  },
+  "homepage": "https://github.com/bryanpizzillo/dom-inventory-tool#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "jsdom": "^11.11.0",
+    "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",
+    "sitemapper": "^2.1.13",
+    "winston": "^3.0.0"
+  }
+}
