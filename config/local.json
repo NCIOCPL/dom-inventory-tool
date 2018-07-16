@@ -1,5 +1,17 @@
 {   
     "logging": {
         "level": "debug"
+    },
+    "pipeline": {
+        "loader": {
+            "module": "./lib/loaders/inventory-loader",
+            "config": {
+               "eshosts": [ "http://admin:passwd3@ncias-d1592-v.nci.nih.gov:9400" ],
+               "daysToKeep": 10,               
+               "aliasName": "dominventory_v1",
+               "mappingPath": "es-mappings/mappings.json",
+               "settingsPath": "es-mappings/settings.json"
+            }
+        }        
     }
 }

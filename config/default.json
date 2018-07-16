@@ -26,7 +26,7 @@
             "config": {
                "eshosts": [ "http://localhost:9200" ],
                "daysToKeep": 10,               
-               "aliasName": "r4r_v1",
+               "aliasName": "dominventory_v1",
                "mappingPath": "es-mappings/mappings.json",
                "settingsPath": "es-mappings/settings.json"
             }

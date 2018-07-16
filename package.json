@@ -20,6 +20,8 @@
     "axios": "^0.18.0",
     "config": "^1.30.0",
     "jsdom": "^11.11.0",
+    "elastic-tools": "git+https://github.com/nciocpl/elastic-tools.git#v1.1.0",
+    "elasticsearch": "^15.0.0",
     "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",
     "sitemapper": "^2.1.13",
     "winston": "^3.0.0"
