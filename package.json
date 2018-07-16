@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bryanpizzillo/dom-inventory-tool#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "config": "^1.30.0",
     "jsdom": "^11.11.0",
     "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",

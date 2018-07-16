@@ -6,10 +6,15 @@
         "source": {
             "module": "./lib/sources/sitemap-source",
             "config": {
-                "sitemapPath": "https://www.cancer.gov/sitemap.xml"
+                "sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml"
             }
         },
         "transformers": [
+            {
+                "module": "./lib/transformers/page-fetcher",
+                "config": {
+                }
+            },
             {
                 "module": "./lib/transformers/dom-extractor",
                 "config": {
