@@ -14,6 +14,7 @@ async function main() {
         ]
     })
 
+    logger.info(`Beginning process with PID: ${process.pid}`)
     let processor;
 
     try {

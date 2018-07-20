@@ -4,9 +4,45 @@
     },
     "pipeline": { 
         "source": {
-            "module": "./lib/sources/sitemap-source",
+            //"module": "./lib/sources/sitemap-source",
+            "module": "./lib/sources/pubcontent-list-source",
             "config": {
-                "sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml"
+                //sitemapUrl is used by sitemap-source
+                //"sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml",
+                //hostname is used by pubcontent-list-source
+                "hostname": "www.cancer.gov",
+                "additionalUrls": [
+                    //Search Results with Best Bets and Definition
+                    "https://www.cancer.gov/search/results?swKeyword=lumpectomy&page=1&pageunit=10&Offset=0",
+                    //Nano search results
+                    "https://www.cancer.gov/sites/nano/nano-search-results?swKeyword=nanotechnology&page=1&pageunit=10&Offset=0",
+                    //Dictionary of Cancer Terms with Image and more info link
+                    "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/lung-cancer",
+                    //Drug dictionary entry
+                    "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/imatinib-mesylate",
+                    //Dynamic Trial listing page
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/disease/adult-all/treatment",
+                    //Clinical trial results
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/r?q=&t=&a=&z=&rl=1",
+                    //Clinical trial description
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/v?loc=0&rl=1&id=NCI-2014-01507&pn=1&ni=10",
+                    //Print results (only good for 90 days starting 7/19/2018)
+                    "https://www.cancer.gov/CTS.Print/Display?printid=eaf3f0a0-5a8b-e811-814a-0050568e168e",
+                    //Genetics professional results
+                    "https://www.cancer.gov/about-cancer/causes-prevention/genetics/directory/results",
+                    //Genetics professional
+                    "https://www.cancer.gov/about-cancer/causes-prevention/genetics/directory/view?personid=775677"
+
+                ],
+                "ignoreUrls": [
+                    "https://www.cancer.gov/search/results",
+                    "https://www.cancer.gov/sites/nano/nano-search-results",
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/disease",
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/interventions",
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/r",
+                    "https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/v"
+
+                ]
             }
         },
         "transformers": [

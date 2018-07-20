@@ -41,7 +41,19 @@
                 "scripts": {
                     "type": "keyword"
                 },
+                "script_blocks": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "englishfulltext"
+                        }
+                    }
+                },
                 "stylesheets": {
+                    "type": "keyword"
+                },
+                "data_attribs": {
                     "type": "keyword"
                 }
             }            
