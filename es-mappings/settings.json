@@ -1,0 +1,25 @@
+{
+    "settings": {
+        "index": {
+            "mapper": {
+                "dynamic": false
+            },
+            "analysis": {
+                "analyzer": {
+                    "source_code": {
+                        "filter": [
+                            "lowercase",
+                            "word_delimiter"
+                        ],
+                        "tokenizer": "standard"
+                    },
+                    "keyword_ci": {
+                        "filter": "lowercase",
+                        "tokenizer": "keyword"
+                    }
+                }
+            }
+            
+        }
+    }
+}        

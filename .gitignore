@@ -1,3 +1,6 @@
+html-cache
+local.json
+
 # Logs
 logs
 *.log

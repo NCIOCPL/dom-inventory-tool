@@ -1,0 +1,82 @@
+{
+    "mappings": {
+        "pageinfo": {
+            "properties": {
+                "url": {
+                    "type": "keyword"
+                },
+                "title": {
+                    "type": "keyword"
+                },
+                "contentid": {
+                    "type": "keyword"
+                },
+                "type": {
+                    "type": "keyword"
+                },
+                "template": {
+                    "type": "keyword"
+                },
+                "ids" : {
+                    "type": "keyword"
+                },
+                "metadata": {
+                    "type": "nested",
+                    "include_in_root": true,
+                    "properties": {
+                        "type": {
+                            "type": "keyword"
+                        },
+                        "name": {
+                            "type": "keyword"
+                        },
+                        "content": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "classes": {
+                    "type": "keyword"
+                },
+                "scripts": {
+                    "type": "keyword"
+                },
+                "script_blocks": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "source_code"
+                        }
+                    }
+                },
+                "script_identifiers": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "keyword_ci"
+                        }
+                    }
+                },
+                "script_strings": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "source_code"
+                        }
+                    }
+                },
+                "stylesheets": {
+                    "type": "keyword"
+                },
+                "data_attribs": {
+                    "type": "keyword"
+                }
+            }            
+        }
+    }
+}
+
+
