@@ -23,6 +23,7 @@
     "config": "^1.30.0",
     "elastic-tools": "git+https://github.com/nciocpl/elastic-tools.git#v1.1.0",
     "elasticsearch": "^15.0.0",
+    "esprima": "^4.0.1",
     "forever-agent": "^0.6.1",
     "jsdom": "^11.11.0",
     "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",

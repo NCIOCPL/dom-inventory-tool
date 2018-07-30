@@ -46,7 +46,25 @@
                     "fields": {
                         "_fulltext": {
                             "type": "text",
-                            "analyzer": "englishfulltext"
+                            "analyzer": "source_code"
+                        }
+                    }
+                },
+                "script_identifiers": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "keyword_ci"
+                        }
+                    }
+                },
+                "script_strings": {
+                    "type": "keyword",
+                    "fields": {
+                        "_fulltext": {
+                            "type": "text",
+                            "analyzer": "source_code"
                         }
                     }
                 },
