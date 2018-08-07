@@ -16,17 +16,15 @@ Node program to scrape a web site and inventory all IDs, Classes and script bloc
 //NOTE: Identifiers are tokenized, so if you want s.prop10,
 //search for prop10, and not s.prop10
 {
-  "query": {
-			{ "match": { "script_identifiers._fulltext": "prop10" } }
-		
-  }
+  "query": 
+	{ "match": { "script_identifiers._fulltext": "prop10" } }
 }
 
 //Search for text in string
 {
-  "query": {
-			{ "match": { "script_strings._fulltext": "dropdowncc" } }
-  }
+  "query": 
+	{ "match": { "script_strings._fulltext": "dropdowncc" } }
+  
 }
 
 //Get all identifiers
