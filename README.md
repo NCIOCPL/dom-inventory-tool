@@ -7,6 +7,15 @@ Node program to scrape a web site and inventory all IDs, Classes and script bloc
 2. Create a local.json file and update any config settings.
 2. run `node index.js`
 
+## Data
+* url - the page URL
+* title - the <title> element
+* contentid - the percussion content id
+* type - the percussion content type
+* script_blocks - the raw <script> tags
+* script_strings - any "content" elements 
+
+
 ## To query
 ```
 //All of these are a POST to 
