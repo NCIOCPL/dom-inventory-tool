@@ -4,7 +4,8 @@ Node program to scrape a web site and inventory all IDs, Classes and script bloc
 
 ## To run
 1. run `npm install`
-2. Create a local.json file and update any config settings.
+2. Create a config/local.json file and update any config settings.
+2. Create a `html-cache` folder if one does not already exist
 2. run `node index.js`
 
 ## Data
